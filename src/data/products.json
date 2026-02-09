@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Arroz",
+    "description": "Arroz extra 1kg",
+    "price": 4.5,
+    "stock": 20,
+    "category": "Abarrotes",
+    "emoji": "🍚",
+    "unit": "bolsa"
+  },
+  {
+    "id": 2,
+    "name": "Aceite",
+    "description": "Aceite vegetal 1L",
+    "price": 7.9,
+    "stock": 15,
+    "category": "Abarrotes",
+    "emoji": "🫗",
+    "unit": "botella"
+  },
+  {
+    "id": 3,
+    "name": "Azúcar Rubia",
+    "description": "Azúcar rubia 1kg",
+    "price": 4.2,
+    "stock": 18,
+    "category": "Abarrotes",
+    "emoji": "🧂",
+    "unit": "bolsa"
+  },
+  {
+    "id": 4,
+    "name": "Fideos",
+    "description": "Spaghetti 500g",
+    "price": 3.2,
+    "stock": 25,
+    "category": "Abarrotes",
+    "emoji": "🍝",
+    "unit": "paquete"
+  },
+  {
+    "id": 5,
+    "name": "Atún",
+    "description": "Lata 170g",
+    "price": 5.5,
+    "stock": 12,
+    "category": "Abarrotes",
+    "emoji": "🐟",
+    "unit": "lata"
+  },
+  {
+    "id": 6,
+    "name": "Leche",
+    "description": "Leche evaporada 400g",
+    "price": 4.1,
+    "stock": 16,
+    "category": "Abarrotes",
+    "emoji": "🥛",
+    "unit": "lata"
+  },
+  {
+    "id": 7,
+    "name": "Gaseosa",
+    "description": "1.5L",
+    "price": 7.5,
+    "stock": 10,
+    "category": "Bebidas",
+    "emoji": "🥤",
+    "unit": "botella"
+  },
+  {
+    "id": 8,
+    "name": "Agua",
+    "description": "Sin gas 625ml",
+    "price": 2.0,
+    "stock": 30,
+    "category": "Bebidas",
+    "emoji": "💧",
+    "unit": "botella"
+  },
+  {
+    "id": 9,
+    "name": "Cerveza sin alcohol",
+    "description": "330ml (demo)",
+    "price": 5.9,
+    "stock": 8,
+    "category": "Bebidas",
+    "emoji": "🍺",
+    "unit": "botella"
+  },
+  {
+    "id": 10,
+    "name": "Papas chips",
+    "description": "Bolsa 90g",
+    "price": 3.8,
+    "stock": 22,
+    "category": "Snacks",
+    "emoji": "🥔",
+    "unit": "bolsa"
+  },
+  {
+    "id": 11,
+    "name": "Galletas",
+    "description": "Pack familiar",
+    "price": 6.5,
+    "stock": 14,
+    "category": "Snacks",
+    "emoji": "🍪",
+    "unit": "pack"
+  },
+  {
+    "id": 12,
+    "name": "Detergente",
+    "description": "Lavavajillas 750ml",
+    "price": 8.9,
+    "stock": 9,
+    "category": "Limpieza",
+    "emoji": "🧴",
+    "unit": "botella"
+  },
+  {
+    "id": 13,
+    "name": "Papel higiénico",
+    "description": "4 rollos",
+    "price": 6.9,
+    "stock": 11,
+    "category": "Limpieza",
+    "emoji": "🧻",
+    "unit": "pack"
+  },
+  {
+    "id": 14,
+    "name": "Pan",
+    "description": "6 unidades",
+    "price": 4.0,
+    "stock": 20,
+    "category": "Panadería",
+    "emoji": "🥖",
+    "unit": "bolsa"
+  }
+]
