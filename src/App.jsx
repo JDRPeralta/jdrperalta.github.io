@@ -350,52 +350,43 @@ export default function App() {
                                 </div>
                               </div>
 
-                              {/* ✅ ARREGLO: Controles responsive para que NO se corte “Agregar” */}
-                              <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                                <div>
-                                  <div className="font-bold text-lg text-blue-600">
-                                    S/ {Number(product.price).toFixed(2)}
-                                  </div>
-                                  <div className="text-xs text-slate-500 mt-1">
-                                    {product.category} • {product.unit}
-                                  </div>
-                                </div>
+{/* ✅ ARREGLO REAL: se adapta al ancho de la CARD (wrap), no al ancho de la pantalla */}
+<div className="mt-4 flex flex-wrap items-end gap-3">
+  <div className="flex-1 min-w-[160px]">
+    <div className="font-bold text-lg text-blue-600">
+      S/ {Number(product.price).toFixed(2)}
+    </div>
+    <div className="text-xs text-slate-500 mt-1">
+      {product.category} • {product.unit}
+    </div>
+  </div>
 
-                                <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
-                                  <div className="flex items-center border border-slate-200 rounded-lg overflow-hidden w-fit">
-                                    <button
-                                      onClick={() => updateCartItem(product.id, quantity - 1)}
-                                      className="w-8 h-8 flex items-center justify-center text-slate-600 hover:bg-slate-100"
-                                    >
-                                      −
-                                    </button>
-                                    <span className="w-8 text-center font-medium">{quantity}</span>
-                                    <button
-                                      onClick={() => updateCartItem(product.id, quantity + 1)}
-                                      className="w-8 h-8 flex items-center justify-center text-slate-600 hover:bg-slate-100"
-                                    >
-                                      +
-                                    </button>
-                                  </div>
+  <div className="ml-auto flex flex-wrap items-center justify-end gap-2 max-w-full">
+    <div className="flex items-center border border-slate-200 rounded-lg overflow-hidden w-fit shrink-0">
+      <button
+        onClick={() => updateCartItem(product.id, quantity - 1)}
+        className="w-8 h-8 flex items-center justify-center text-slate-600 hover:bg-slate-100"
+      >
+        −
+      </button>
+      <span className="w-8 text-center font-medium">{quantity}</span>
+      <button
+        onClick={() => updateCartItem(product.id, quantity + 1)}
+        className="w-8 h-8 flex items-center justify-center text-slate-600 hover:bg-slate-100"
+      >
+        +
+      </button>
+    </div>
 
-                                  <button
-                                    onClick={() => addToCart(product.id, quantity)}
-                                    className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-xl transition-colors shadow-sm hover:shadow text-sm"
-                                  >
-                                    Agregar
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </motion.div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              </div>
+    <button
+      onClick={() => addToCart(product.id, quantity)}
+      className="min-w-[120px] px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors shadow-sm hover:shadow text-sm"
+    >
+      Agregar
+    </button>
+  </div>
+</div>
 
-              {/* Right column */}
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
                   <div className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">
